@@ -1,38 +1,40 @@
-private double length;
-private double width;
+public class Main{
 
-public Rectangle(){
-    lenght = 0;
-    width = 0;
-}
+    private double length;
+    private double width;
 
-public Rectangle(double newLength, double newWidth){
-    double getLength(newLength);
-    double getWidth(newWidth);
-}
+    public Main(){
+        length = 0;
+        width = 0;
+    }
 
-public double getLength(){
-    retunt length;
-}
+    public Main(double newLength, double newWidth){
+        setLength(newLength);
+        setWidth(newWidth);
+    }
 
-public void setLength(newLength){
-    this.length = newLength
-}
+    public double getLength(){ //Getter
+        return length;
+    }
 
-public double getWidth(){
-    retunt width;
-}
+    public void setLength(double newLength){ //Setter
+        this.length = newLength;
+    }
 
-public void setWidth(newWidth){
-    this.width = newWidth;
-}
+    public double getWidth(){ //Getter
+        return width;
+    }
 
-public double calculatePerimeter(){
-    return 2*length + 2*width;
-  }
+    public void setWidth(double newWidth){ //Setter
+        this.width = newWidth;
+    }
 
-public double calculateArea(){
-    return length*width;
-  }
+    public double calculatePerimeter(){
+        return (2*length) + (2*width);
+    }
+
+    public double calculateArea(){
+        return length*width;
+    }
 
 }
